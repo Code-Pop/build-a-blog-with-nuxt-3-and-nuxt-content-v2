@@ -13,7 +13,7 @@ const { data: blogPostList } = useAsyncData('blogPostList', () => {
           :key="blogPost._path"
           class="card article"
         >
-          <NuxtLink to="/blog/my-second-blog-post">
+          <NuxtLink :to="blogPost._path">
             <section class="blog-post-card card article">
               <div class="media">
                 <div class="media-content has-text-centered">
